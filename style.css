@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+  .main-container {
+    @apply max-w-[1264px] mx-auto w-full
+  }
+
+  .position {
+    @apply px-5 relative top-[-40vh]
+  }
+
+  .cardlg {
+    @apply w-full max-w-[580px]
+  }
+
+  .card {
+    @apply w-full max-w-md md:max-w-[360px]
+  }
+
+  .max-w-1920px {
+    max-width: 1920px;
+    width: 100%;
+  }
+
+  .text-gradient-top-bottom {
+    background: -webkit-linear-gradient(#00d0ff, #ff02e6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gradient-left-right {
+    background: -webkit-linear-gradient(180deg, #00d0ff, #ff02e6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+:root{
+  scroll-behavior: smooth;
+}
